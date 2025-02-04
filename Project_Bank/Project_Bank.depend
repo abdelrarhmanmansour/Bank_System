@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1738666869 source:d:\route[basics]\bank_system\project_bank\main.cpp
+	<iostream>
+	<cmath>
+	<string>
+	<vector>
+	<exception>
+	<algorithm>
+	"Validator.h"
+	"ValidationException_Name_Password.h"
+	"ValidationException_Balance.h"
+	"ValidationException_Salary.h"
+	"Person.h"
+
+1738665989 source:d:\route[basics]\bank_system\project_bank\src\validator.cpp
+	"Validator.h"
+
+1738666071 d:\route[basics]\bank_system\project_bank\include\validator.h
+	<iostream>
+
+1738666261 source:d:\route[basics]\bank_system\project_bank\src\validationexception_name_password.cpp
+	"ValidationException_Name_Password.h"
+
+1738666340 d:\route[basics]\bank_system\project_bank\include\validationexception_name_password.h
+	<iostream>
+
+1738666513 source:d:\route[basics]\bank_system\project_bank\src\validationexception_balance.cpp
+	"ValidationException_Balance.h"
+
+1738666553 d:\route[basics]\bank_system\project_bank\include\validationexception_balance.h
+	<iostream>
+
+1738666694 source:d:\route[basics]\bank_system\project_bank\src\validationexception_salary.cpp
+	"ValidationException_Salary.h"
+
+1738666725 d:\route[basics]\bank_system\project_bank\include\validationexception_salary.h
+	<iostream>
+
+1738666907 d:\route[basics]\bank_system\project_bank\include\person.h
+	<iostream>
+	"Validator.h"
+	"ValidationException_Name_Password.h"
+	"ValidationException_Balance.h"
+	"ValidationException_Salary.h"
+
+1738666784 source:d:\route[basics]\bank_system\project_bank\src\person.cpp
+	"Person.h"
+
+1738667099 source:d:\route[basics]\bank_system\project_bank\src\client.cpp
+	"Client.h"
+
+1738667168 d:\route[basics]\bank_system\project_bank\include\client.h
+	<iostream>
+	"Validator.h"
+	"ValidationException_Name_Password.h"
+	"ValidationException_Balance.h"
+	"ValidationException_Salary.h"
+	"Person.h"
+
+1738667288 source:d:\route[basics]\bank_system\project_bank\src\employee.cpp
+	"Employee.h"
+
+1738667338 d:\route[basics]\bank_system\project_bank\include\employee.h
+	"Validator.h"
+	"ValidationException_Name_Password.h"
+	"ValidationException_Balance.h"
+	"ValidationException_Salary.h"
+	"Person.h"
+	<iostream>
+
