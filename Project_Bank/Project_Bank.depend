@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1738666869 source:d:\route[basics]\bank_system\project_bank\main.cpp
+1738788505 source:d:\route[basics]\bank_system\project_bank\main.cpp
 	<iostream>
 	<cmath>
 	<string>
@@ -11,6 +11,9 @@
 	"ValidationException_Balance.h"
 	"ValidationException_Salary.h"
 	"Person.h"
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
 
 1738665989 source:d:\route[basics]\bank_system\project_bank\src\validator.cpp
 	"Validator.h"
@@ -36,7 +39,7 @@
 1738666725 d:\route[basics]\bank_system\project_bank\include\validationexception_salary.h
 	<iostream>
 
-1738666907 d:\route[basics]\bank_system\project_bank\include\person.h
+1738776766 d:\route[basics]\bank_system\project_bank\include\person.h
 	<iostream>
 	"Validator.h"
 	"ValidationException_Name_Password.h"
@@ -49,7 +52,7 @@
 1738667099 source:d:\route[basics]\bank_system\project_bank\src\client.cpp
 	"Client.h"
 
-1738667168 d:\route[basics]\bank_system\project_bank\include\client.h
+1738776766 d:\route[basics]\bank_system\project_bank\include\client.h
 	<iostream>
 	"Validator.h"
 	"ValidationException_Name_Password.h"
@@ -60,11 +63,23 @@
 1738667288 source:d:\route[basics]\bank_system\project_bank\src\employee.cpp
 	"Employee.h"
 
-1738667338 d:\route[basics]\bank_system\project_bank\include\employee.h
+1738776766 d:\route[basics]\bank_system\project_bank\include\employee.h
 	"Validator.h"
 	"ValidationException_Name_Password.h"
 	"ValidationException_Balance.h"
 	"ValidationException_Salary.h"
 	"Person.h"
 	<iostream>
+
+1738667373 source:d:\route[basics]\bank_system\project_bank\src\admin.cpp
+	"Admin.h"
+
+1738667438 d:\route[basics]\bank_system\project_bank\include\admin.h
+	<iostream>
+	"Validator.h"
+	"ValidationException_Name_Password.h"
+	"ValidationException_Balance.h"
+	"ValidationException_Salary.h"
+	"Person.h"
+	"Employee.h"
 

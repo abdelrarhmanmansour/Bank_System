@@ -19,14 +19,19 @@ int main()
 //    int chances=3;
 //    while(chances--)
 //    {
-//        // Person:
+//         Person:
 //        try
 //        {
 //            int id;
+//            cout << "Enter an ID: ";
 //            cin >> id;
 //            string name,password;
-//            cin >> name >> password;
-//            Person(id,name,password);
+//            cout << "Enter a Name: ";
+//            cin >> name;
+//            cout << "Enter a password: ";
+//            cin >> password;
+//            system("cls");
+//            Person p(id,name,password);
 //            cout << "Hello to the Bank\n";
 //            break;
 //        }
@@ -45,15 +50,21 @@ int main()
 //    int chances=3;
 //    while(chances--)
 //    {
-//        // Client:
+//        //Client:
 //        try
 //        {
 //            int id;
+//            cout << "Enter an ID: ";
 //            cin >> id;
 //            string name,password;
-//            cin >> name >> password;
+//            cout << "Enter a Name: ";
+//            cin >> name;
+//            cout << "Enter a password: ";
+//            cin >> password;
 //            double balance;
+//            cout << "Enter an Balance: ";
 //            cin >> balance;
+//            system("cls");
 //            Client c(id,name,password,balance),c1(id,name,password,9000);
 //            cout << "Hello to the Bank\n";
 //            c.Deposit(500);
@@ -84,11 +95,17 @@ int main()
 //        try
 //        {
 //            int id;
+//            cout << "Enter an ID: ";
 //            cin >> id;
 //            string name,password;
-//            cin >> name >> password;
+//            cout << "Enter a Name: ";
+//            cin >> name;
+//            cout << "Enter a password: ";
+//            cin >> password;
 //            double salary;
+//            cout << "Enter an Salary: ";
 //            cin >> salary;
+//            system("cls");
 //            Employee e(id,name,password,salary);
 //            cout << "Hello to the Bank\n";
 //            e.Display_Info();
@@ -105,19 +122,25 @@ int main()
 //            cout << "You have " << chances << "Chances"<<"\n";
 //        }
 //    }
-    // this number of chances;
+    //this number of chances;
 //    int chances=3;
 //    while(chances--)
 //    {
 //         Admin:
 //        try
 //        {
-//            int id;
+//             int id;
+//            cout << "Enter an ID: ";
 //            cin >> id;
 //            string name,password;
-//            cin >> name >> password;
+//            cout << "Enter a Name: ";
+//            cin >> name;
+//            cout << "Enter a password: ";
+//            cin >> password;
 //            double salary;
+//            cout << "Enter an Salary: ";
 //            cin >> salary;
+//            system("cls");
 //            Admin a(id,name,password,salary);
 //            cout << "Hello to the Bank\n";
 //            a.Display_Info();
@@ -135,4 +158,5 @@ int main()
 //        }
 //    }
 }
+
 
