@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1738788505 source:d:\route[basics]\bank_system\project_bank\main.cpp
+1739900099 source:d:\route[basics]\bank_system\project_bank\main.cpp
 	<iostream>
 	<cmath>
 	<string>
 	<vector>
 	<exception>
 	<algorithm>
+	<fstream>
+	<sstream>
 	"Validator.h"
 	"ValidationException_Name_Password.h"
 	"ValidationException_Balance.h"
@@ -14,6 +16,10 @@
 	"Client.h"
 	"Employee.h"
 	"Admin.h"
+	"DataSourceInterface.h"
+	"Parser.h"
+	"File_Helper.h"
+	"File_Manager.h"
 
 1738665989 source:d:\route[basics]\bank_system\project_bank\src\validator.cpp
 	"Validator.h"
@@ -52,8 +58,9 @@
 1738667099 source:d:\route[basics]\bank_system\project_bank\src\client.cpp
 	"Client.h"
 
-1738776766 d:\route[basics]\bank_system\project_bank\include\client.h
+1739819587 d:\route[basics]\bank_system\project_bank\include\client.h
 	<iostream>
+	<vector>
 	"Validator.h"
 	"ValidationException_Name_Password.h"
 	"ValidationException_Balance.h"
@@ -63,23 +70,79 @@
 1738667288 source:d:\route[basics]\bank_system\project_bank\src\employee.cpp
 	"Employee.h"
 
-1738776766 d:\route[basics]\bank_system\project_bank\include\employee.h
+1739987905 d:\route[basics]\bank_system\project_bank\include\employee.h
 	"Validator.h"
+	<vector>
 	"ValidationException_Name_Password.h"
 	"ValidationException_Balance.h"
 	"ValidationException_Salary.h"
 	"Person.h"
+	"Client.h"
 	<iostream>
 
 1738667373 source:d:\route[basics]\bank_system\project_bank\src\admin.cpp
 	"Admin.h"
 
-1738667438 d:\route[basics]\bank_system\project_bank\include\admin.h
+1739988044 d:\route[basics]\bank_system\project_bank\include\admin.h
 	<iostream>
+	<vector>
 	"Validator.h"
 	"ValidationException_Name_Password.h"
 	"ValidationException_Balance.h"
 	"ValidationException_Salary.h"
 	"Person.h"
 	"Employee.h"
+
+1739986461 d:\route[basics]\bank_system\project_bank\include\datasourceinterface.h
+	<iostream>
+	"Person.h"
+	"File_Helper.h"
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+	<vector>
+
+1739379370 source:d:\route[basics]\bank_system\project_bank\src\datasourceinterface.cpp
+	"DataSourceInterface.h"
+
+1739894138 d:\route[basics]\bank_system\project_bank\include\parser.h
+	<iostream>
+	"Person.h"
+	<string>
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+	<sstream>
+	<vector>
+
+1739809438 source:d:\route[basics]\bank_system\project_bank\src\parser.cpp
+	"Parser.h"
+
+1739819687 d:\route[basics]\bank_system\project_bank\include\file_helper.h
+	<iostream>
+	<vector>
+	"Person.h"
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+	<fstream>
+	<sstream>
+	"Parser.h"
+
+1739817392 source:d:\route[basics]\bank_system\project_bank\src\file_helper.cpp
+	"File_Helper.h"
+
+1739987265 d:\route[basics]\bank_system\project_bank\include\file_manager.h
+	<vector>
+	<iostream>
+	"Person.h"
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+	"DataSourceInterface.h"
+	"File_Helper.h"
+	"Parser.h"
+
+1739820656 source:d:\route[basics]\bank_system\project_bank\src\file_manager.cpp
+	"File_Manager.h"
 

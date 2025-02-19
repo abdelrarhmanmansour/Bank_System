@@ -4,6 +4,8 @@
 #include <vector>
 #include<exception>
 #include<algorithm>
+#include<fstream>
+#include<sstream>
 #include "Validator.h"
 #include "ValidationException_Name_Password.h"
 #include "ValidationException_Balance.h"
@@ -12,6 +14,10 @@
 #include "Client.h"
 #include "Employee.h"
 #include "Admin.h"
+#include "DataSourceInterface.h"
+#include "Parser.h"
+#include "File_Helper.h"
+#include "File_Manager.h"
 using namespace std;
 int main()
 {
@@ -53,6 +59,7 @@ int main()
 //        //Client:
 //        try
 //        {
+//            fstream clients("clients.txt",ios::app);
 //            int id;
 //            cout << "Enter an ID: ";
 //            cin >> id;
@@ -65,7 +72,11 @@ int main()
 //            cout << "Enter an Balance: ";
 //            cin >> balance;
 //            system("cls");
-//            Client c(id,name,password,balance),c1(id,name,password,9000);
+//            Client c(id,name,password,balance),c1(id+1,"salmamohamed","rorosalma@gmail.com",balance+1000);
+//            clients << c.get_id() << '|' << c.get_name() << '|' <<c.get_password() << '|' << c.get_balance() << "\n";
+//            clients.close();
+//            Client client =Parser::Parse_To_Client("3|leqaahani|leqqahani@mansour123|7800");
+//            client.Display_Info_Client();
 //            cout << "Hello to the Bank\n";
 //            c.Deposit(500);
 //            c.WithDraw(500);
@@ -94,6 +105,7 @@ int main()
 //        // Employee:
 //        try
 //        {
+//            fstream employees("employees.txt",ios::app);
 //            int id;
 //            cout << "Enter an ID: ";
 //            cin >> id;
@@ -107,8 +119,16 @@ int main()
 //            cin >> salary;
 //            system("cls");
 //            Employee e(id,name,password,salary);
+//            employees << e.get_id() << '|' << e.get_name() << '|' <<e.get_password() << '|' << e.get_salary() << "\n";
+//            employees.close();
+//            Employee employee= Parser::Parse_To_Employee("2|entsarahmed|entsarahmed12345|5000");
+//            employee.Display_Info();
 //            cout << "Hello to the Bank\n";
 //            e.Display_Info();
+//            Client c(2,"rororororor","rorororororor",1600);
+//            File_Helper::Save_Client(c);
+//            File_Manager::updateClients();
+//            e.Add_Client(c);
 //            break;
 //        }
 //        catch(exception&e)
@@ -126,10 +146,11 @@ int main()
 //    int chances=3;
 //    while(chances--)
 //    {
-//         Admin:
+//       //Admin:
 //        try
 //        {
-//             int id;
+//            fstream admins("admin.txt",ios::app);
+//            int id;
 //            cout << "Enter an ID: ";
 //            cin >> id;
 //            string name,password;
@@ -142,7 +163,11 @@ int main()
 //            cin >> salary;
 //            system("cls");
 //            Admin a(id,name,password,salary);
+//            admins << a.get_id() << '|' << a.get_name() << '|' <<a.get_password() << '|' << a.get_salary() << "\n";
+//            admins.close();
 //            cout << "Hello to the Bank\n";
+//            Admin admin = Parser::Parse_To_Admin("1|Tarekmasoud|mansour@route123|8000");
+//            admin.Display_Info();
 //            a.Display_Info();
 //            break;
 //        }
@@ -157,6 +182,7 @@ int main()
 //            cout << "You have " << chances << "Chances"<<"\n";
 //        }
 //    }
+
 }
 
 

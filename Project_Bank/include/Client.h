@@ -1,6 +1,7 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 #include<iostream>
+#include<vector>
 #include "Validator.h"
 #include "ValidationException_Name_Password.h"
 #include "ValidationException_Balance.h"
@@ -81,4 +82,6 @@ public:
         cout << "The Balance is: " <<  balance << "\n";
     }
 };
+static vector<Client>allclients;
+static vector<Client>::iterator cl;
 #endif // CLIENT_H
