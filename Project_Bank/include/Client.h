@@ -34,7 +34,7 @@ public:
         }
         else
         {
-            throw ValidationException_Balance();
+            Validator::Enter_Balance();
         }
     }
     // Getters:

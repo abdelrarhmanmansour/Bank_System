@@ -97,15 +97,27 @@ public:
         }
         file.close();
     }
-    static void Clear_File(string filename,string lastidfile)
+    // Returns true if both files were successfully cleared and reset, false otherwise
+    static bool Clear_File(string filename,string lastidfile)
     {
-        // how to clear files::
-        fstream file,file1;
-        file.open(filename,ios::out);
+        // Clear the first file
+        ofstream file(filename,ios::trunc);
+        if (!file.is_open())
+        {
+            cerr << "Error: Failed to open file: " << filename <<endl;
+            return false; // Indicate failure
+        }
         file.close();
-        file1.open(lastidfile,ios::out);
+        // Write 0 to the second file
+        ofstream file1(lastidfile,ios::out);
+        if (!file1.is_open())
+        {
+            cerr << "Error: Failed to open file: " << lastidfile << endl;
+            return false; // Indicate failure
+        }
         file1 << 0;
         file1.close();
+        return true; // Indicate success
     }
 };
 #endif // FILE_HELPER_H

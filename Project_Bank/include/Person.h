@@ -38,7 +38,7 @@ public:
         }
         else
         {
-            throw ValidationException_Name_Password();
+            Validator::Enter_Name();
         }
     }
     void set_password(string password)
@@ -49,7 +49,7 @@ public:
         }
         else
         {
-            throw ValidationException_Name_Password();
+            Validator::Enter_Password();
         }
     }
     // Getters:

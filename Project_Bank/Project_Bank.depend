@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1739900099 source:d:\route[basics]\bank_system\project_bank\main.cpp
+1741291127 source:d:\route[basics]\bank_system\project_bank\main.cpp
 	<iostream>
 	<cmath>
 	<string>
@@ -9,9 +9,6 @@
 	<fstream>
 	<sstream>
 	"Validator.h"
-	"ValidationException_Name_Password.h"
-	"ValidationException_Balance.h"
-	"ValidationException_Salary.h"
 	"Person.h"
 	"Client.h"
 	"Employee.h"
@@ -20,11 +17,20 @@
 	"Parser.h"
 	"File_Helper.h"
 	"File_Manager.h"
+	"Client_Manager.h"
+	"Employee_Manager.h"
+	"Admin_Manager.h"
+	"Screens.h"
+	<thread>
+	<chrono>
 
 1738665989 source:d:\route[basics]\bank_system\project_bank\src\validator.cpp
 	"Validator.h"
 
-1738666071 d:\route[basics]\bank_system\project_bank\include\validator.h
+1741255041 d:\route[basics]\bank_system\project_bank\include\validator.h
+	"ValidationException_Name_Password.h"
+	"ValidationException_Balance.h"
+	"ValidationException_Salary.h"
 	<iostream>
 
 1738666261 source:d:\route[basics]\bank_system\project_bank\src\validationexception_name_password.cpp
@@ -45,7 +51,7 @@
 1738666725 d:\route[basics]\bank_system\project_bank\include\validationexception_salary.h
 	<iostream>
 
-1738776766 d:\route[basics]\bank_system\project_bank\include\person.h
+1741255041 d:\route[basics]\bank_system\project_bank\include\person.h
 	<iostream>
 	"Validator.h"
 	"ValidationException_Name_Password.h"
@@ -58,7 +64,7 @@
 1738667099 source:d:\route[basics]\bank_system\project_bank\src\client.cpp
 	"Client.h"
 
-1739819587 d:\route[basics]\bank_system\project_bank\include\client.h
+1741255142 d:\route[basics]\bank_system\project_bank\include\client.h
 	<iostream>
 	<vector>
 	"Validator.h"
@@ -70,7 +76,7 @@
 1738667288 source:d:\route[basics]\bank_system\project_bank\src\employee.cpp
 	"Employee.h"
 
-1739987905 d:\route[basics]\bank_system\project_bank\include\employee.h
+1741255134 d:\route[basics]\bank_system\project_bank\include\employee.h
 	"Validator.h"
 	<vector>
 	"ValidationException_Name_Password.h"
@@ -93,7 +99,7 @@
 	"Person.h"
 	"Employee.h"
 
-1739986461 d:\route[basics]\bank_system\project_bank\include\datasourceinterface.h
+1739988113 d:\route[basics]\bank_system\project_bank\include\datasourceinterface.h
 	<iostream>
 	"Person.h"
 	"File_Helper.h"
@@ -118,7 +124,7 @@
 1739809438 source:d:\route[basics]\bank_system\project_bank\src\parser.cpp
 	"Parser.h"
 
-1739819687 d:\route[basics]\bank_system\project_bank\include\file_helper.h
+1741290585 d:\route[basics]\bank_system\project_bank\include\file_helper.h
 	<iostream>
 	<vector>
 	"Person.h"
@@ -132,7 +138,7 @@
 1739817392 source:d:\route[basics]\bank_system\project_bank\src\file_helper.cpp
 	"File_Helper.h"
 
-1739987265 d:\route[basics]\bank_system\project_bank\include\file_manager.h
+1739988148 d:\route[basics]\bank_system\project_bank\include\file_manager.h
 	<vector>
 	<iostream>
 	"Person.h"
@@ -145,4 +151,57 @@
 
 1739820656 source:d:\route[basics]\bank_system\project_bank\src\file_manager.cpp
 	"File_Manager.h"
+
+1741273638 d:\route[basics]\bank_system\project_bank\include\client_manager.h
+	<iostream>
+	"Validator.h"
+	"File_Helper.h"
+	"File_Manager.h"
+	"Person.h"
+	"Client.h"
+	"Employee.h"
+
+1741259556 source:d:\route[basics]\bank_system\project_bank\src\client_manager.cpp
+	"Client_Manager.h"
+
+1741291284 d:\route[basics]\bank_system\project_bank\include\employee_manager.h
+	<iostream>
+	"Validator.h"
+	"File_Helper.h"
+	"File_Manager.h"
+	"Employee.h"
+	"Client_Manager.h"
+
+1741263846 source:d:\route[basics]\bank_system\project_bank\src\employee_manager.cpp
+	"Employee_Manager.h"
+
+1741291246 d:\route[basics]\bank_system\project_bank\include\admin_manager.h
+	<iostream>
+	"Validator.h"
+	"File_Helper.h"
+	"File_Manager.h"
+	"Employee.h"
+	"Admin.h"
+	"Client_Manager.h"
+	"Employee_Manager.h"
+
+1741266673 source:d:\route[basics]\bank_system\project_bank\src\admin_manager.cpp
+	"Admin_Manager.h"
+
+1741273787 d:\route[basics]\bank_system\project_bank\include\screens.h
+	<iostream>
+	"Validator.h"
+	"File_Helper.h"
+	"File_Manager.h"
+	"Employee.h"
+	"Admin.h"
+	"Client_Manager.h"
+	"Client.h"
+	"Employee_Manager.h"
+	"Admin_Manager.h"
+	<thread>
+	<chrono>
+
+1741273325 source:d:\route[basics]\bank_system\project_bank\src\screens.cpp
+	"Screens.h"
 

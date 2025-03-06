@@ -34,7 +34,7 @@ public:
         }
         else
         {
-            throw ValidationException_Salary();
+            Validator::Enter_Salary();
         }
     }
     //Getters:
