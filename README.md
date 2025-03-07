@@ -1,7 +1,8 @@
 🚀 Bank System Project - C++
 I’m excited to share my latest project, a Bank System application built using C++, Object-Oriented Programming (OOP), File Handling, and Vectors for data management. This project simulates a real-world banking system with three main modules: Client, Employee, and Admin, each with unique functionalities.
 
-Key Features:
+Key Features:  
+
 1- Client Module:
 
 #Login using ID and password.
